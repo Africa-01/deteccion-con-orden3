@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control de Vehículo IoT - ALEXA</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="dark-mode">
+
+  <!-- Contenedor principal centrado verticalmente -->
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <!-- Tarjeta principal con sombra y animación -->
+    <div class="card p-5 shadow-lg chat-card w-100">
+      <!-- Título principal con icono animado -->
+      <h2 class="text-center text-info fw-bold mb-3">
+        <i class="fa-solid fa-car-side me-2"></i> Control por Voz - ALEXA
+      </h2>
+
+      <!-- Cuadro para mostrar la frase detectada y la respuesta -->
+      <div class="mb-4">
+        <h5 class="text-white fw-semibold">
+          <i class="fa-solid fa-waveform-lines"></i> Comando Detectado:
+        </h5>
+        <div id="outputText" class="border rounded p-3 bg-light text-dark shadow-sm">
+          Esperando instrucción por voz...
+        </div>
+      </div>
+
+      <!-- Botón principal para iniciar reconocimiento -->
+      <button id="startBtn" class="btn btn-info btn-lg w-100 mb-3">
+        <i class="fa-solid fa-microphone-lines"></i> Iniciar Reconocimiento de Voz
+      </button>
+
+      <!-- Zona de mensajes de error o estado -->
+      <div class="text-center">
+        <div id="msgText" class="text-warning fw-medium"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página personalizado con crédito -->
+  <footer class="bg-dark text-white text-center py-3 w-100 border-top border-info">
+    <p class="mb-0">
+      <i class="fa-solid fa-satellite-dish"></i> Desarrollado por Luz María para proyecto IHC - Control de vehículo IoT
+    </p>
+  </footer>
+
+  <!-- JavaScript personalizado -->
+  <script src="js/main.js"></script>
+</body>
+</html>
