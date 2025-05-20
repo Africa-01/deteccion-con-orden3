@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #232526, #414345);
+    color: white;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .dark-mode {
+    background-color: #181818;
+  }
+  
+  .chat-card {
+    background: #222;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    max-width: 600px;
+  }
+  
+  .btn-success {
+    transition: 0.2s ease-in-out;
+  }
+  .btn-success:hover {
+    transform: scale(1.05);
+  }
+  
+  #outputText {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+  }
+  
