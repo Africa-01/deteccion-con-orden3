@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function enviarComando(frase) {
     const name = document.getElementById("userName").value.trim();
 
-    fetch("http://localhost/api-gpt-php/endpoints/chat.php", {
+    fetch("http://3.239.37.61/api-gpt-php/endpoints/chat.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: frase, name: name })
